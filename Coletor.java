@@ -21,11 +21,11 @@ public class Coletor {
       System.exit(1);
     }
 
-    Coletor[] coletores = new Coletor[args.length];
+    TarefaDoColetor[] coletores = new TarefaDoColetor[args.length];
     try {
       for (int i = 0; i < args.length; i++) {
         System.out.println("Thread " + i + ": Coletando página [" + args[i] + "]");
-        coletores[i] = new Coletor("Thread_" + i, args[i]);
+        coletores[i] = new TarefaDoColetor("Thread_" + i, args[i]);
         coletores[i].start();
       }
 
