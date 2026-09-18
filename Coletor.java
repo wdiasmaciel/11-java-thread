@@ -15,7 +15,7 @@ public class Coletor {
      * Portanto, para aceitar uma URL ou mais, use:
      *     if (args.length < 1) { ... }
      */
-    if (args.length != 2) {
+    if (args.length < 1) {
       System.err.println("Sintaxe:");
       System.err.println("Sintaxe: java Coletor http://url1 http://url2 ... http://urln");
       System.exit(1);
