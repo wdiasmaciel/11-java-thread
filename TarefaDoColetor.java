@@ -13,6 +13,10 @@ public class TarefaDoColetor extends Thread {
     this.stringDaUrl = urlInformadaPeloUsuario;
   }
 
+  public String getNome() {
+    return nome;
+  }
+
   public void run() {
     try {
       URL url = URI.create(stringDaUrl).toURL();

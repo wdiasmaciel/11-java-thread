@@ -29,8 +29,9 @@ public class Coletor {
         coletores[i].start();
       }
 
+      System.out.println("Esperando finalização das threads...");
       for (int i = 0; i < args.length; i++) {
-        System.out.println("Esperando finalização dasthreads...");
+        System.out.println("Finalizando [" + coletores[i].getNome() + "]...");
         coletores[i].join();
       }
     } catch (Exception e) {
