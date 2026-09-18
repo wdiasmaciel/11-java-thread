@@ -35,7 +35,9 @@ Altere o algoritmo desta prática de forma que:
 
 5. Imprima o vetor de palavras distintas na tela, com as respectivas frequências.
 
-6. Permita que o usuário escolha imprimir o vetor de palavras em ordem alfabética das palavras.
+6. Permita que o usuário escolha imprimir o vetor de palavras em ordem:
+
+  - Alfabética das palavras.
 
 7. Permita que o usuário escolha imprimir o vetor de palavras em ordem alfabética inversa das palavras.
 
