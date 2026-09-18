@@ -31,7 +31,7 @@ public class Coletor {
 
       for (int i = 0; i < args.length; i++) {
         System.out.println("Esperando finalização dasthreads...");
-        coletor[i].join();
+        coletores[i].join();
       }
     } catch (Exception e) {
       System.out.println(e);
