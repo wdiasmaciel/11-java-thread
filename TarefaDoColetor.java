@@ -39,10 +39,11 @@ public class TarefaDoColetor extends Thread {
   public synchronized void imprimeTexto(String texto) {
     String[] conjuntoDeTermos = texto.replaceAll("<.*?>", "").toLowerCase().split(" ");
     
-    System.out.println("---[" + nome + "]---");
+    System.out.println("\n\n---[" + nome + "]---");
     System.out.println("Termos da página [" + stringDaUrl + "]:");
     for (int i = 0; i < conjuntoDeTermos.length; i++)
       if ((conjuntoDeTermos[i].equals(" ") == false) && (conjuntoDeTermos[i].equals("") == false))
         System.out.println(conjuntoDeTermos[i]);
+    System.out.println("\n\n--------------------------------\n\n");
   }
 }
